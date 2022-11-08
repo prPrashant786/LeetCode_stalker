@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+
+        android:layout_marginStart="5dp"
+        android:layout_marginBottom="14dp"
+        android:elevation="5dp"
+        app:cardCornerRadius="15dp"
+        android:backgroundTint="#f5f5f5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/cveasy" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ranking"
+                android:gravity="center"
+                android:textColor="@color/med_color"
+                android:textSize="15sp"
+                />
+            <TextView
+                android:id="@+id/tvranking"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="112345"
+                android:textSize="25sp"
+                android:textColor="@color/med_color"
+                android:layout_weight="2"
+                android:gravity="center"
+                />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cveasy"
+        android:layout_width="150dp"
+        android:layout_height="120dp"
+
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="140dp"
+        android:elevation="5dp"
+        app:cardCornerRadius="15dp"
+        android:backgroundTint="#f5f5f5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Easy"
+                android:gravity="center"
+                android:textSize="25sp"
+                android:textColor="@color/ey_green"
+                android:layout_weight="1"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="2"
+                android:gravity="center"
+                >
+                <TextView
+                    android:id="@+id/tvtoteasysol"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="150"
+                    android:gravity="center_horizontal"
+                    android:textSize="30sp"
+                    android:textColor="@color/ey_green"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="/"
+                    android:gravity="center_horizontal"
+                    android:textSize="30sp"
+                    android:textColor="@color/ey_green"/>
+                <TextView
+                    android:id="@+id/tvtoteasy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="600"
+                    android:gravity="center_horizontal"
+                    android:textSize="30sp"
+                    android:textColor="#6CB84F"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="14dp"
+        android:elevation="5dp"
+        app:cardCornerRadius="15dp"
+        android:backgroundTint="#f5f5f5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/cvmid" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Total Solved"
+                android:gravity="center"
+                android:textColor="@color/med_color"
+                android:textSize="15sp"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="2"
+                android:gravity="center"
+                >
+                <TextView
+                    android:id="@+id/tvtotsol"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="320"
+                    android:gravity="center_horizontal"
+                    android:textSize="21sp"
+                    android:textColor="@color/med_color"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="/"
+                    android:gravity="center_horizontal"
+                    android:textSize="21sp"
+                    android:textColor="@color/med_color"/>
+                <TextView
+                    android:id="@+id/tvtot"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2463"
+                    android:gravity="center_horizontal"
+                    android:textSize="21sp"
+                    android:textColor="@color/med_color"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvmid"
+        android:layout_width="150dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="140dp"
+        android:layout_marginEnd="5dp"
+        android:elevation="5dp"
+        app:cardCornerRadius="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Hard"
+                android:gravity="center"
+                android:textSize="25sp"
+                android:textColor="@color/hd_green"
+                android:layout_weight="1"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="2"
+                android:gravity="center"
+                >
+                <TextView
+                    android:id="@+id/tvtothardsol"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="150"
+                    android:gravity="center_horizontal"
+                    android:textSize="30sp"
+                    android:textColor="@color/hd_green"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="/"
+                    android:gravity="center_horizontal"
+                    android:textSize="30sp"
+                    android:textColor="@color/hd_green"/>
+                <TextView
+                    android:id="@+id/tvtothard"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="600"
+                    android:gravity="center_horizontal"
+                    android:textSize="30sp"
+                    android:textColor="@color/hd_green"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvhard"
+        android:layout_width="150dp"
+        android:layout_height="120dp"
+
+
+        android:layout_marginTop="36dp"
+
+        android:elevation="5dp"
+
+        app:cardCornerRadius="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cveasy" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Medium"
+                android:gravity="center"
+                android:textSize="25sp"
+                android:textColor="@color/md_green"
+                android:layout_weight="1"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="2"
+                android:gravity="center"
+                >
+                <TextView
+                    android:id="@+id/tvtotmedsol"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="150"
+                    android:gravity="center_horizontal"
+                    android:textSize="30sp"
+                    android:textColor="@color/md_green"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="/"
+                    android:gravity="center_horizontal"
+                    android:textSize="30sp"
+                    android:textColor="@color/md_green"/>
+                <TextView
+                    android:id="@+id/tvtotmed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="600"
+                    android:gravity="center_horizontal"
+                    android:textSize="30sp"
+                    android:textColor="@color/md_green"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cvhard">
+        <ProgressBar
+            android:id="@+id/progressBar1"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_centerVertical="true"
+            tools:progress="45"
+            android:indeterminateOnly="false"
+            android:progressDrawable="@drawable/circle"
+            android:indeterminateDuration="@integer/material_motion_duration_long_2"
+        />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center">
+
+            <TextView
+                android:id="@+id/tvactper"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="54%"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                android:layout_weight="5"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Acceptance"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Rate"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                />
+        </LinearLayout>
+
+
+</FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
